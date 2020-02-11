@@ -1,0 +1,74 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+
+int main() {
+    //Ex.1 ,Ex.2 e Ex.3
+    cout << "Ex.1 ,Ex.2 e Ex.3" <<endl<<endl;
+    locale::global(locale(""));
+    cout << "Os passos para o desenvolvimento de SW seguro são:" << endl;
+    cout << "1. Análise: Definir o problema, tendo em conta a segurança." << endl;
+    cout << "2. Desenho: Planear a solução, tendo em conta a segurança." << endl;
+    cout << "3. Implementação: Codificar a solução, tendo em conta a segurança." << endl;
+    cout << "4. Testar e depurar, tendo em conta a segurança." << endl;
+    cout << "5. Manter e documentar, tendo em conta a segurança. " << endl;
+    
+    cout << endl<<endl;
+    
+    //Ex.4
+    cout << "Ex.4" << endl;
+    cout << "7+3 = 10" << endl << "7-3 = 4" << endl << "7*3 = 21" << endl << "7/3 = 2" << endl << "7.0/3.0 = 2.5" << endl << "7%3 = 1" << endl << "7+3*5 = 22" << endl << "(7+3)*5 = 50"<<endl;
+    
+    cout << endl<<endl;
+
+    //Ex.5
+    cout << "Ex.5" << endl;
+    int n1;
+    cout << "Input a whole number: ";
+    cin >> n1;
+    if (n1 % 2 == 0) {
+        cout << "Your number divided by 2 is " << int(n1 / 2) << " and the remainder is 0";
+    } else {
+        cout << "Your number divided by 2 is " << int(n1 / 2) << " and the remainder is " << int(n1 % 2);
+    }
+
+
+    cout << endl << endl;
+
+    //Ex.6
+    cout << "Ex.6" << endl;
+
+    int r;
+    cout << "Raio = ";
+    cin >> r;
+    const float PI = 3.14;
+    float area = PI * r * r;
+    float volume = (4 / 3) * PI * r * r * r;
+    cout << "Area = " << area << endl << "Volume = " << volume<<endl;
+
+    cout << endl << endl;
+
+    //Ex.7
+    cout << "Ex.7" << endl;
+    
+    string nome;
+    string apelido;
+
+    int idade;
+    int ano;
+    int currentyear;
+    currentyear = 2020;
+
+    cout << "First Name: ";
+    cin >> nome;
+    cout << "Last Name: ";
+    cin >> apelido;
+    cout << "Age: ";
+    cin >> idade;
+    ano = currentyear - idade;
+
+    cout << endl;
+    cout << "Hello, " << nome << " " << apelido << " ! You were born in " << ano;
+
+    return 0;
+}
